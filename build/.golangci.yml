@@ -1,0 +1,40 @@
+run:
+  skip-dirs:
+    - vendor
+    - tmp
+    - src/main/vendor
+    - build
+    - pkg
+    - .git
+    - .vscode
+    - mock
+linters:
+  enable:
+    - megacheck
+    #- govet
+    - golint
+    - gosec
+    # - interfacer
+    - unconvert
+    - goconst
+    - gocyclo
+    - gofmt
+    # - goimports
+    # - maligned
+    - depguard
+    - misspell
+    # - unparam
+    - nakedret
+    # - prealloc
+    # - scopelint
+    - gocritic
+    # - gochecknoinits
+  enable-all: false
+  disable:
+    - errcheck
+    - govet
+
+issues:
+  exclude:
+    - cyclomatic complexity \d+ of func `\(\*Vstream\)\.GetStreams`
+    - cyclomatic complexity \d+ of func `\(\*UseCase\)\.Authorization`
