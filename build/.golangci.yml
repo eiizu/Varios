@@ -36,5 +36,4 @@ linters:
 
 issues:
   exclude:
-    - cyclomatic complexity \d+ of func `\(\*Vstream\)\.GetStreams`
     - cyclomatic complexity \d+ of func `\(\*UseCase\)\.Authorization`
